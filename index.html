@@ -7,21 +7,22 @@
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  <main class="container">
-    <h1>Welcome to Our Page</h1>
-    <p>Click on a photo to visit our personal applications!</p>
-    <section class="profiles">
-      <div class="profile-card" onclick="window.location.href='/ram/'">
-        <img src="assets/ram.jpg" alt="Ram" class="profile-img"/>
-        <h2>Ramu Muppuri</h2>
-        <span class="visit-btn">Visit My Profile</span>
-      </div>
-      <div class="profile-card" onclick="window.location.href='/lakshman/'">
-        <img src="assets/lakshman.jpg" alt="Lakshman" class="profile-img"/>
-        <h2>Lakshman Muppuri</h2>
-        <span class="visit-btn">Visit My Profile</span>
-      </div>
-    </section>
-  </main>
+  <h1>Welcome to the Muppuris Family Page</h1>
+  
+  <div class="container">
+    <!-- Your profile -->
+    <div class="profile-card" onclick="window.location.href='/ram/'">
+      <img src="assets/ram.jpg" alt="Ram Muppuri">
+      <h2>Ram Muppuri</h2>
+      <p>Software Developer</p>
+    </div>
+
+    <!-- Brother's profile -->
+    <div class="profile-card" onclick="window.location.href='/lakshman/'">
+      <img src="assets/lakshman.jpg" alt="Lakshman Kishore Muppuri">
+      <h2>Lakshman Kishore Muppuri</h2>
+      <p>NetSuite Manager, GIR Software Services</p>
+    </div>
+  </div>
 </body>
 </html>
