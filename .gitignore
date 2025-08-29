@@ -1,0 +1,17 @@
+    # Ignore all files ending with .log
+    *.log
+
+    # Ignore the 'node_modules' directory
+    node_modules/
+
+    # Ignore a specific file named 'secrets.txt'
+    secrets.txt
+
+    # Ignore all files in the 'temp' directory
+    temp/
+
+    # Ignore all files named 'Thumbs.db' (common Windows thumbnail cache)
+    Thumbs.db
+
+    # Ignore all files named '.DS_Store' (common macOS system file)
+    .DS_Store
