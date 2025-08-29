@@ -1,0 +1,100 @@
+/* Beautiful, modern, responsive design */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(135deg, #f5d6e6 0%, #b1c6ea 100%);
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #3b3b61;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+}
+
+p {
+  font-size: 1.15rem;
+  color: #5f5f77;
+  margin-bottom: 35px;
+}
+
+.profiles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.profile-card {
+  background: rgba(255,255,255,0.80);
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(44, 62, 80, 0.13);
+  padding: 30px 22px;
+  width: 230px;
+  cursor: pointer;
+  transition: transform 0.15s, box-shadow 0.15s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.profile-card:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 16px 36px rgba(90, 87, 184, 0.15);
+  background: rgba(255,255,255,0.93);
+}
+
+.profile-img {
+  width: 110px;
+  height: 110px;
+  border-radius: 999px;
+  object-fit: cover;
+  border: 4px solid #b6cfff;
+  margin-bottom: 18px;
+  box-shadow: 0 4px 16px rgba(15, 69, 134, 0.12);
+}
+
+h2 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #2b3556;
+  margin-bottom: 8px;
+}
+
+.visit-btn {
+  display: inline-block;
+  margin-top: 8px;
+  background: linear-gradient(90deg, #6a9afb, #e564be);
+  color: white;
+  font-weight: 600;
+  border-radius: 9px;
+  padding: 7px 20px;
+  font-size: 1rem;
+  transition: background 0.15s;
+  box-shadow: 0 2px 8px rgba(64, 97, 220, 0.09);
+}
+.profile-card:hover .visit-btn {
+  background: linear-gradient(90deg, #e564be, #6a9afb);
+}
+
+@media (max-width: 650px) {
+  .profiles {
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+  .container {
+    padding: 20px 6px;
+  }
+}
